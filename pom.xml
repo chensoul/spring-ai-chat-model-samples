@@ -11,15 +11,10 @@
     <name>spring-ai-samples</name>
 
     <modules>
-        <module>01-chat-openai</module>
-        <module>02-chat-ollama</module>
-        <module>03-chat-anthropic</module>
-        <module>04-prompt-templates</module>
-        <module>05-structured-output</module>
-        <module>06-chat-memory</module>
-        <module>07-chat-memory-sse</module>
-        <module>08-rag-vector-store</module>
-        <module>09-tool-calling</module>
+        <module>chat-model</module>
+        <module>chat-memory</module>
+        <module>chat-memory-sse</module>
+        <module>chat-rag</module>
         <module>10-mcp-server-stdio</module>
         <module>11-mcp-client-stdio</module>
         <module>12-mcp-server-webflux</module>
@@ -30,8 +25,6 @@
         <module>17-mcp-authorization-server</module>
         <module>18-mcp-server-oauth2</module>
         <module>19-mcp-client-oauth2</module>
-        <module>20-moderation</module>
-        <module>21-model-evaluation</module>
     </modules>
 
 </project>
