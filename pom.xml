@@ -41,11 +41,13 @@
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-model-deepseek</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.retry</groupId>
-            <artifactId>spring-retry</artifactId>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-retry</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
