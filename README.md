@@ -1,16 +1,52 @@
-# Spring AI Samples
+# Spring AI Chat Model Samples
 
-基于 [Spring AI](https://spring.io/projects/spring-ai) 的示例项目，涵盖对话、提示词模板、结构化输出、对话记忆、RAG、工具调用与 MCP 等能力。各模块可独立运行。
+This project demonstrates the integration of AI capabilities (chat、prompt template、tool calling) within a Spring Boot application, utilizing the Spring AI framework.
 
-## 环境要求
 
-- **Java 21**
-- **Maven 3.9+**（或使用仓库根目录的 `./mvnw`）
-- 部分模块需配置 **API Key** 或本地服务：
-  - **DeepSeek**：多数模块默认使用，需设置 `DEEPSEEK_API_KEY`
-- **Redis**：06-chat-memory、08-rag-vector-store
-  - **PostgreSQL**：06-chat-memory
+## Articles
 
-## 许可证
+- 开始使用 Spring AI聊天模型，并轻松切换不同的 AI 提供商，包括 OpenAI、Anthropic 和 Ollama。详细指南请参阅以下文章：
 
-见 [LICENSE](LICENSE)。
+## Architecture
+
+Currently, there are four @RestControllers that show Spring AI features:
+
+- ChatClientController
+- ChatPromptController
+- ChatConverterController
+- ChatToolController
+
+## Running the Application
+
+Follow these steps to run the application locally.
+
+```
+git clone https://github.com/chensoul/spring-ai-chat-model-samples.git
+cd spring-ai-chat-model-samples
+```
+
+By default, this sample Spring AI app connects to OpenAI. So, before running the app you must set a token:
+
+```
+export OPENAI_API_KEY=<YOUR_API_TOKEN>
+mvn spring-boot:run
+```
+
+To enable integration with Anthropic, we should activate the `anthropici` profile:
+
+```
+export ANTHROPIC_API_KEY=<YOUR_API_TOKEN>
+mvn spring-boot:run -Panthropici
+```
+
+To enable integration with Ollama, we should activate the `ollama` profile:
+
+```
+mvn spring-boot:run -Pollama
+```
+
+Before that, we must run the model on Ollama, e.g.:
+
+```
+ollama run qwen3:8b
+```
