@@ -49,6 +49,13 @@
             <artifactId>spring-ai-retry</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- Feign 调用 OpenAI 兼容接口示例 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>4.2.0</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
