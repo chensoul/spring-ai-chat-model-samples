@@ -1,4 +1,4 @@
-package cc.chensoul.ai.demo.feign;
+package io.zhijun.ai.demo.feign;
 
 import feign.RequestInterceptor;
 import org.springframework.beans.factory.annotation.Value;

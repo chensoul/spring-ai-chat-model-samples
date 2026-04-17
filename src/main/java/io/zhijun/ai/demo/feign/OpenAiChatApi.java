@@ -1,4 +1,4 @@
-package cc.chensoul.ai.demo.feign;
+package io.zhijun.ai.demo.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;

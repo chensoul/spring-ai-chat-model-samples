@@ -21,7 +21,7 @@ Currently, there are four @RestControllers that show Spring AI features:
 Follow these steps to run the application locally.
 
 ```
-git clone https://github.com/chensoul/spring-ai-chat-model-samples.git
+git clone https://github.com/zhijunio/spring-ai-chat-model-samples.git
 cd spring-ai-chat-model-samples
 ```
 

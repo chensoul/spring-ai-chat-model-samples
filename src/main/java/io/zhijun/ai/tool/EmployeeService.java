@@ -1,4 +1,4 @@
-package cc.chensoul.ai.tool;
+package io.zhijun.ai.tool;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;

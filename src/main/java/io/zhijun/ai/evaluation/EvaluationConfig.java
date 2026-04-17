@@ -1,4 +1,4 @@
-package cc.chensoul.ai.evaluation;
+package io.zhijun.ai.evaluation;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.evaluation.FactCheckingEvaluator;

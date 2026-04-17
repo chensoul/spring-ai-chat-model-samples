@@ -1,4 +1,4 @@
-package cc.chensoul.ai.tool;
+package io.zhijun.ai.tool;
 
 public class Employee {
     private String empId;

@@ -1,4 +1,4 @@
-package cc.chensoul.ai;
+package io.zhijun.ai;
 
 import cc.chensoul.ai.model.Input;
 import cc.chensoul.ai.model.TitleSuggestionsRequest;
